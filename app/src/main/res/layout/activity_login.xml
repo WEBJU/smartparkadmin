@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="@dimen/logo_w_h"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/logo"
+            android:layout_height="@dimen/logo_w_h"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:textColorHint="@color/white"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/email"
+                android:hint="@string/hint_email"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/colorAccent"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:textColorHint="@color/white"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/password"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:backgroundTint="@color/colorAccent"
+                android:imeOptions="actionUnspecified"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btn_login"
+            style="?android:textAppearanceSmall"
+            android:text="@string/btn_login"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btn_reset_password"
+            android:text="@string/btn_forgot_password"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"/>
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center|bottom"
+            android:visibility="gone"
+            android:layout_marginBottom="20dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

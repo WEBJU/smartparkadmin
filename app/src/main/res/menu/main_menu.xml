@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/add_geofence"
+
+        android:title="Add Geofence"/>
+
+    <item android:id="@+id/delete_geofence"
+        android:title="Registered Geofences"/>
+
+    <item android:id="@+id/logout"
+        android:title="Sign Out"/>
+</menu>
